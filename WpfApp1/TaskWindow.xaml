@@ -1,0 +1,21 @@
+﻿<Window x:Class="WpfApp1.TaskWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="TaskWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="151*"/>
+            <ColumnDefinition Width="27*"/>
+            <ColumnDefinition Width="614*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="LoginBox" HorizontalAlignment="Left" Height="23" Margin="22.082,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2" Grid.Column="1" TextChanged="TextBox_TextChanged"/>
+        <PasswordBox x:Name="PasswordBox" HorizontalAlignment="Left" Margin="22.082,122,0,0" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <Label Content="Логин" HorizontalAlignment="Left" Margin="157,42,0,0" VerticalAlignment="Top" Grid.Column="2"/>
+        <Label Content="Пароль" HorizontalAlignment="Left" Margin="157,122,0,0" VerticalAlignment="Top" Grid.Column="2"/>
+        <Button Content="Log In" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Grid.Column="2" Margin="433,323,0,0" Click="Button_Click"/>
+    </Grid>
+</Window>
